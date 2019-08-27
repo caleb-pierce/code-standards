@@ -3,7 +3,7 @@
 **This is a living document and subject to change.**
 Please Note: On Acquia we will not be using their feature "Live Development" which would allow you to directly edit code on dev or stage.
 
-##Code Review & Standards
+## Code Review & Standards
 For Drupal 8 we will generally refer to [Drupal 8 coding standards](https://www.drupal.org/docs/develop/standards)  and [Acquia has a nice general list](https://docs.acquia.com/blt/developer/code-review/).
 
 In rare cases where blocks of text constructed dynamically in code utilize HEREDOC. PHP should not be used as a templating language.  Utilize Twig.
@@ -41,7 +41,7 @@ Use `git status` here to confirm nothing went awry in adding files.
 
 After all files are staged for commit run `git commit` and do not use the `-m` tag unless it is truly a one line change.  Running the commit command without the '-m' flag will open your text editor, usually vi or vim default on Unix.
 
-###A note about commit messages
+### A note about commit messages
 
 In most cases one line commit messages are not comprehensive enough for what a peer must be reviewing. Good commit messages are part information part art.
 
@@ -69,19 +69,19 @@ This recommendation on commit messages not hard and fast rules; No more than 1 p
 
 Writing a good commit message makes reviewing code better for peers and in the event that commits are ever 'squashed' into a finalized feature the clear subjects can optionally become the new feature commit message. 
 
-##SASS over CSS
+## SASS over CSS
 One of the main problems with css is it can become messy and unmanageable over time. Solution? SASS.  In a SASS we can write CSS in a hierarchical way. We can also create variables and mix-ins.  No more having to hunt down 30 instances of `color: #cf0f12;` to change them all to `color: 336aaf;`. We can have a variable named `$gutter`, set it to 5px and ensure that every box has the right sized gutters on it.
 
-###Installing  [Sass](https://sass-lang.com/install)
+### Installing  [Sass](https://sass-lang.com/install)
 You can install Sass on Windows, Mac, or Linux by downloading the package for your operating system [from GitHub](https://github.com/sass/dart-sass/releases/tag/1.22.10) and adding it to your PATH. That’s all—there are no external dependencies and nothing else you need to install.
 
 PhpStorm can set up file watchers while you are making edits to your theme.
 
-##Composer
+## Composer
 
 Composer is the PHP package manager these days. Arguably one of the best things that has happened to PHP. Drupal 8 and some Acquia products depend upon it. Composer is the NuGet of the php world.
 
-###Install composer 
+### Install composer 
 Acquia Dev desktop ships with composer and php.  If you want to run Composer locally, install php 7.2+ and add php to your widnows PATH. Go to the composer page and download the windows exe and install. https://getcomposer.org/doc/00-intro.md#installation-windows
 
 
