@@ -65,7 +65,7 @@ tldr: rules from above article:
 1. Wrap the body at 72 characters
 1. Use the body to explain what and why vs. how
 
-This recommendation on commit messages not hard and fast rules; No more than 1 paragraph in a commit. If a commit message becomes to large, it may be a sign that work needs to be committed more often to the repo. Large commit messages should be reserved for a squashed feature commit.
+This recommendation on commit messages is not a set of hard and fast rules; No more than 1 paragraph in a commit. If a commit message becomes to large, it may be a sign that work needs to be committed more often to the repo. Large commit messages should be reserved for a squashed feature commit.
 
 Writing a good commit message makes reviewing code better for peers and in the event that commits are ever 'squashed' into a finalized feature the clear subjects can optionally become the new feature commit message. 
 
